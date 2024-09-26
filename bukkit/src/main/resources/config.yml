@@ -1,0 +1,8 @@
+#
+#     Author @Weesli
+#
+
+
+options:
+  prefix: "&6RFriend &8>> "
+  friend-limit: 10
