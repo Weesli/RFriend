@@ -1,0 +1,5 @@
+name: bukkit
+version: '1.0'
+main: net.weesli.bukkit.Bukkit
+api-version: '1.21'
+authors: [ Weesli ]
