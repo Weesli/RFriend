@@ -1,9 +1,0 @@
-bundle/
-
-target/
-
-*.iml
-
-*.jar
-
-.idea
