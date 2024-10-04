@@ -1,0 +1,158 @@
+main-menu:
+  title: "&8Friend Menu"
+  size: 27
+  glass-items: true
+  children:
+    profile:
+      title: "&aProfile"
+      # this is player head
+      material: PAPER
+      custom-model-data: 0
+      lore:
+        - "&7"
+        - "&7Username: &f%player%"
+        - "&7Friend count: &f%count%"
+        - "&7Status: &f%status%"
+        - "&7"
+        - "&7Click and setting status"
+      slot: 4
+    friends:
+      title: "&aFriends"
+      material: PLAYER_HEAD
+      custom-model-data: 0
+      lore:
+        - "&7"
+        - "&7List of your friends"
+        - "&7"
+        - "&7Click and manage friends"
+      slot: 10
+    settings:
+      title: "&aSettings"
+      material: REDSTONE_BLOCK
+      custom-model-data: 0
+      lore:
+        - "&7"
+        - "&7Change your friend settings"
+        - "&7"
+        - "&7Click and manage friend settings"
+      slot: 13
+    blocks:
+      title: "&aBlocked players"
+      material: BOOK
+      custom-model-data: 0
+      lore:
+        - "&7"
+        - "&7Blocked player list"
+        - "&7"
+        - "&7Click and manage block list"
+      slot: 16
+
+friends-menu:
+  title: "&8Friends"
+  size: 27
+  glass-items: true
+  children:
+    item-settings:
+      title: "&a%player%"
+      material: PLAYER_HEAD
+      custom-model-data: 0
+      lore:
+        - "&7"
+        - "&7Status: &f%status%"
+        - "&7Status message: &f%message%"
+        - "&7Server: &f%server%" # only proxy mode
+        - "&7"
+        - "&7Click and delete friend"
+    add-friend:
+      title: "&aAdd Friend"
+      material: NAME_TAG
+      custom-model-data: 0
+      lore:
+        - "&7"
+        - "&7Add a friend by their username"
+        - "&7"
+      slot: 22
+    previous-page:
+      title: "&aPrevious Page"
+      material: ARROW
+      custom-model-data: 0
+      lore:
+        - "&7"
+        - "&7Go to the previous page"
+        - "&7"
+      slot: 21
+    next-page:
+      title: "&aNext Page"
+      material: ARROW
+      custom-model-data: 1
+      lore:
+        - "&7"
+        - "&7Go to the next page"
+        - "&7"
+      slot: 23
+
+blocks-menu:
+  title: "&8Blocked Players"
+  size: 27
+  glass-items: true
+  children:
+    add-block:
+      title: "&aAdd Blocked Player"
+      material: NAME_TAG
+      custom-model-data: 0
+      lore:
+        - "&7"
+        - "&7Add a blocked player by their username"
+        - "&7"
+      slot: 22
+    item-settings:
+      title: "&a%player%"
+      material: PLAYER_HEAD
+      custom-model-data: 0
+      lore:
+        - "&7"
+        - "&7Click and unblock player"
+    previous-page:
+      title: "&aPrevious Page"
+      material: ARROW
+      custom-model-data: 0
+      lore:
+        - "&7"
+        - "&7Go to the previous page"
+        - "&7"
+      slot: 21
+    next-page:
+      title: "&aNext Page"
+      material: ARROW
+      custom-model-data: 1
+      lore:
+        - "&7"
+        - "&7Go to the next page"
+        - "&7"
+      slot: 23
+
+settings-menu:
+  title: "&8Friend Settings"
+  size: 27
+  glass-items: true
+  children:
+    invite:
+      title: "&aDISABLE INVITE"
+      material: STONE
+      custom-model-data: 0
+      lore:
+        - "&7"
+        - "&7Status: &f%status%"
+        - "&7"
+        - "&7Click and interact setting"
+      slot: 10
+    message:
+      title: "&aDISABLE MESSAGE"
+      material: STONE
+      custom-model-data: 0
+      lore:
+        - "&7"
+        - "&7Status: &f%status%"
+        - "&7"
+        - "&7Click and interact setting"
+      slot: 16

@@ -1,0 +1,5 @@
+name: RFriend
+version: '1.0'
+main: net.weesli.shared.RFriend
+api-version: '1.13'
+authors: [ Weesli ]

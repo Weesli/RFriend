@@ -1,0 +1,27 @@
+#
+#     Author @Weesli
+#
+
+
+options:
+  prefix: "&6RFriend &8>> "
+  database:
+    # 'SQLite' or 'MySQL'
+    driver: "SQLite"
+    host: "localhost"
+    port: 3306
+    database: "rfriend"
+    username: "root"
+    password: ""
+  cross-server:
+    enabled: false
+    redis-uri: "<your-uri>"
+  friend-limit: 10
+  # no support for placeholders
+  friend-message-format: "&f[&bFriend&f] &7%sender% &8>> &f%message%"
+  status:
+    online: "&aOnline"
+    offline: "&cOffline"
+  settings-status:
+    enabled: "&aEnabled"
+    disabled: "&cDisabled"
