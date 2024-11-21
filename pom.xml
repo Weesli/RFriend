@@ -16,6 +16,12 @@
     <maven.compiler.target>17</maven.compiler.target>
   </properties>
 
+  <repositories>
+    <repository>
+      <id>jitpack</id>
+      <url>https://jitpack.io</url>
+    </repository>
+  </repositories>
 
   <build>
     <plugins>
@@ -51,11 +57,17 @@
 
 
   <dependencies>
+
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
       <version>1.18.34</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.github.Weesli</groupId>
+      <artifactId>rlib</artifactId>
+      <version>1.8.2</version>
     </dependency>
   </dependencies>
 </project>
