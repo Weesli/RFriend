@@ -19,6 +19,38 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.6.0</version>
+                <configuration>
+                    <finalName>RFriend-1.0</finalName>
+                    <outputDirectory>../bundle</outputDirectory>
+                    <relocations>
+                        <relocation>
+                            <pattern>dev.triumphteam.cmd</pattern>
+                            <shadedPattern>net.weesli.shared.cmd</shadedPattern>
+                        </relocation>
+                        <relocation>
+                            <pattern>de.rapha149.signgui</pattern>
+                            <shadedPattern>net.weesli.shared.signgui</shadedPattern>
+                        </relocation>
+                    </relocations>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
     <repositories>
         <repository>
             <id>jitpack</id>
